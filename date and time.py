@@ -1,0 +1,37 @@
+# Current Time in Python
+import datetime as dt
+
+current_date = dt.date.today()
+print("Current Date : ", current_date)
+
+new = dt.date(2021, 10, 25)
+print(new)
+print("Year: ", new.year)
+print("Year: ", new.month)
+print("Year: ", new.day)
+print("------------------")
+a = dt.time(10, 45, 5, 555505)
+print(a)
+print("Hours: ", a.hour)
+print("Hours: ", a.minute)
+print("Hours: ", a.second)
+print("Hours: ", a.microsecond)
+print("-------------------------------------------")
+current_time = dt.datetime.now()
+print("Current Time: ", current_time)
+print("---------------------------------------------")
+new = dt.datetime(2021,7,9,5,50,55)
+print(new)
+print(new.date())
+print(new.time())
+print("---------------------------------------------")
+current = dt.datetime.now()
+new_year = dt.datetime(2022,1,1)
+difference = new_year - current
+print(difference)
+print("--------------------------------------------")
+current = dt.datetime.now()
+print(current)
+s = current.strftime("%A %B %D %Y")
+print(s)
+
